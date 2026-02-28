@@ -1,0 +1,46 @@
+{
+  "labels": [
+    "greeting",
+    "inquiry",
+    "info",
+    "transaction_confirm",
+    "unknown"
+  ],
+  "label2id": {
+    "greeting": 0,
+    "inquiry": 1,
+    "info": 2,
+    "transaction_confirm": 3,
+    "unknown": 4
+  },
+  "id2label": {
+    "0": "greeting",
+    "1": "inquiry",
+    "2": "info",
+    "3": "transaction_confirm",
+    "4": "unknown"
+  },
+  "model_name": "distilbert-base-uncased",
+  "class_weights": {
+    "0": 2.064,
+    "1": 0.5319587628865979,
+    "2": 0.8672268907563025,
+    "3": 1.0019417475728156,
+    "4": 2.064
+  },
+  "config": {
+    "max_length": 128,
+    "batch_size": 16,
+    "gradient_accumulation_steps": 1,
+    "learning_rate": 2e-05,
+    "num_epochs": 10,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "eval_steps": 50,
+    "save_steps": 50,
+    "use_focal_loss": true,
+    "focal_gamma": 2.0,
+    "augment_data": true,
+    "min_samples_per_class": 50
+  }
+}
